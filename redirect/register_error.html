@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/login.css">
-    <link rel="stylesheet" href="src/css/register.css">
+    <title>CRUD PHP</title>
+    <link rel="stylesheet" href="../src/css/login.css">
+    <link rel="stylesheet" href="../src/css/register.css">
 </head>
 
 <body>
     <main>
         <div class="login-box register-box">
-            <img src="./src/images/logo.png" class="avatar" alt="Avatar Image">
+            <img src="../src/images/logo.png" class="avatar" alt="Avatar Image">
             <h1>Registrate (usuario ocupado)</h1>
-            <form action="./src/php/register/register.php" method="post">
+            <form action="../src/php/register/register.php" method="post">
 
                 <!-- NAME INPUT -->
                 <label for="name">Nombre completo</label>
@@ -23,10 +23,10 @@
                 <!-- ADDRESS INPUT -->
                 <label for="address">Dirección</label>
                 <input type="text" name="address" placeholder="Ingresa tu dirección" id="address" required>
-                <!-- NAME INPUT -->
+                <!-- PHONE NUMBER INPUT -->
                 <label for="phone-number">Teléfono</label>
                 <input type="text" name="phone-number" placeholder="Ingresa tu número de teléfono" id="phone-number" required>
-                <!-- USERNAME INPUT -->
+                <!-- PHONE NUMBER INPUT -->
                 <label for="username">Nombre de usuario</label>
                 <input type="text" name="username" placeholder="Ingresa tu usuario" id="username" required>
                 <!-- PASSWORD INPUT -->
@@ -34,7 +34,7 @@
                 <input type="password" name="password" placeholder="Ingresa tu contraseña" id="password" required>
                 <!-- BUTTONS -->
                 <input type="submit" value="Registrar">
-                <a href="./index.html">¿Ya tienes una cuenta?</a>
+                <a href="../index.html">¿Ya tienes una cuenta?</a>
             </form>
         </div>
     </main>

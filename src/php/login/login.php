@@ -20,8 +20,8 @@ if ($array['contar'] > 0) {
     // en la variable session se guarda el numero de cuenta esto para poder acarrearla
     $_SESSION['username'] = $username;
 
-    header("location: ../../../register.html");
+    header("location: ../../../redirect/registros.php");
 } else {
-    header("location: ../../../login_error.html");
+    header("location: ../../../redirect/login_error.html");
 }
 ?>

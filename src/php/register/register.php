@@ -23,9 +23,9 @@ if ($array['contar'] > 0) {
     // en la variable session se guarda el numero de cuenta esto para poder acarrearla
     $_SESSION['username'] = $username;
 
-    header("location: ../../../register_error.html");
+    header("location: ../../../redirect/register_error.html");
 } else {
-    $q2 = "INSERT INTO usuarios(username, pass, id_rls) values ('$username', '$password', 1)";
+    $q2 = "INSERT INTO usuarios(username, pass, nombre, direccion, telefono) values ('$username', '$password', '$name', '$address', '$phone')";
     mysqli_query($conexion, $q2);
 
     header("location: ../../../index.html");

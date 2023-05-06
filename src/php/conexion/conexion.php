@@ -3,7 +3,7 @@
 $host_db = "localhost";
 $user_db = "root";
 $psw_db = "";
-$dbname = "tienda_online";
+$dbname = "empleados";
 
 // Crear conexión
 $conexion = new mysqli($host_db, $user_db, $psw_db, $dbname);
@@ -12,6 +12,5 @@ $conexion = new mysqli($host_db, $user_db, $psw_db, $dbname);
 if ($conexion->connect_error) {
     die("La conexión ha fallado: " . $conexion->connect_error);
 }
-echo "Conexión exitosa";
 
 ?>
